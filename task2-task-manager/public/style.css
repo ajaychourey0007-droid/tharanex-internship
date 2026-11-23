@@ -1,0 +1,23 @@
+:root{--bg:#f1f5f9;--card:#fff;--text:#0f172a;--muted:#64748b;--accent:#2563eb;--danger:#dc2626;--ok:#16a34a}
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:system-ui,-apple-system,Segoe UI,Roboto,sans-serif;background:var(--bg);color:var(--text)}
+header{display:flex;justify-content:space-between;align-items:center;padding:14px 18px;background:var(--accent);color:#fff;flex-wrap:wrap;gap:8px}
+header h1{font-size:1.3rem}#userBox{display:flex;align-items:center;gap:10px}
+main{max-width:720px;margin:20px auto;padding:0 14px}
+.panel{background:var(--card);padding:18px;border-radius:12px;box-shadow:0 1px 4px rgba(0,0,0,.08);margin-bottom:16px;display:flex;flex-direction:column;gap:10px}
+input,textarea,select{padding:11px;border:1px solid #cbd5e1;border-radius:8px;font:inherit;width:100%}
+.row{display:flex;gap:10px;flex-wrap:wrap}.row>*{flex:1 1 130px}
+.btn{background:var(--accent);color:#fff;border:0;padding:11px 18px;border-radius:8px;font-weight:600;cursor:pointer;font-size:1rem}
+.small{background:#e2e8f0;color:var(--text);border:0;padding:6px 12px;border-radius:6px;cursor:pointer;font-size:.85rem}
+.tabs{display:flex;gap:8px}.tab{flex:1;padding:10px;border:0;background:#e2e8f0;border-radius:8px;cursor:pointer;font-weight:600}.tab.active{background:var(--accent);color:#fff}
+.msg{color:var(--danger);font-size:.9rem;min-height:1.2em}.msg.ok{color:var(--ok)}
+.filters{display:flex;gap:8px;margin-bottom:12px;flex-wrap:wrap}
+.chip{border:1px solid #cbd5e1;background:#fff;padding:6px 14px;border-radius:999px;cursor:pointer}.chip.active{background:var(--accent);color:#fff;border-color:var(--accent)}
+.task{background:var(--card);border-radius:12px;padding:14px 16px;margin-bottom:10px;box-shadow:0 1px 3px rgba(0,0,0,.07);border-left:5px solid #94a3b8}
+.task.high{border-left-color:var(--danger)}.task.medium{border-left-color:#f59e0b}.task.low{border-left-color:var(--ok)}
+.task.done h3{text-decoration:line-through;color:var(--muted)}
+.task p{color:var(--muted);font-size:.92rem;margin:4px 0}
+.meta{display:flex;gap:8px;flex-wrap:wrap;font-size:.8rem;margin:8px 0}
+.meta span{background:#e2e8f0;padding:2px 10px;border-radius:999px}
+.actions{display:flex;gap:8px;flex-wrap:wrap}.actions .del{background:#fee2e2;color:var(--danger)}
+.empty{text-align:center;color:var(--muted);padding:30px}

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Ajay Chourey | Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="nav">
+    <a class="logo" href="#home">Ajay<span>.</span></a>
+    <nav>
+      <a href="#about">About</a><a href="#skills">Skills</a>
+      <a href="#projects">Projects</a><a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <section id="home" class="hero">
+    <p class="hello">Hi, I'm</p>
+    <h1>Ajay Chourey</h1>
+    <h2>Frontend Developer &amp; B.Tech CST Student</h2>
+    <p>I build clean, responsive web interfaces and I'm growing into full-stack development.</p>
+    <a class="btn" href="#projects">View My Work</a>
+    <a class="btn ghost" href="#contact">Contact Me</a>
+  </section>
+
+  <section id="about">
+    <h3 class="title">About Me</h3>
+    <p>I'm a B.Tech Computer Science &amp; Technology student at SAGE University, Indore. I completed a 2-month Frontend Development internship at Growfinix, where I worked on real, responsive web pages using HTML, CSS and JavaScript.</p>
+  </section>
+
+  <section id="skills">
+    <h3 class="title">Skills</h3>
+    <div class="chips">
+      <span>HTML5</span><span>CSS3</span><span>JavaScript</span><span>React.js</span>
+      <span>Node.js</span><span>Express.js</span><span>MongoDB</span><span>Git &amp; GitHub</span>
+    </div>
+  </section>
+
+  <section id="projects">
+    <h3 class="title">Projects</h3>
+    <div id="projectList" class="grid"><p>Loading projects…</p></div>
+  </section>
+
+  <section id="contact">
+    <h3 class="title">Get In Touch</h3>
+    <form id="contactForm">
+      <input name="name" placeholder="Your name" required />
+      <input name="email" type="email" placeholder="Your email" required />
+      <textarea name="message" rows="5" placeholder="Your message" required></textarea>
+      <button class="btn" type="submit">Send Message</button>
+      <p id="status"></p>
+    </form>
+  </section>
+
+  <footer>© <span id="year"></span> Ajay Chourey · SAGE University, Indore</footer>
+  <script src="script.js"></script>
+</body>
+</html>

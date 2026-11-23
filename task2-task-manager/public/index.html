@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Task Manager</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header><h1>✅ Task Manager</h1><div id="userBox" hidden><span id="userName"></span><button id="logoutBtn" class="small">Logout</button></div></header>
+
+  <main>
+    <!-- Auth -->
+    <section id="authView" class="panel">
+      <div class="tabs"><button id="tabLogin" class="tab active">Login</button><button id="tabRegister" class="tab">Register</button></div>
+      <form id="authForm">
+        <input id="name" placeholder="Full name" hidden />
+        <input id="email" type="email" placeholder="Email" required />
+        <input id="password" type="password" placeholder="Password (min 6 chars)" required minlength="6" />
+        <button class="btn" id="authSubmit">Login</button>
+        <p id="authMsg" class="msg"></p>
+      </form>
+    </section>
+
+    <!-- App -->
+    <section id="appView" hidden>
+      <form id="taskForm" class="panel">
+        <h2 id="formTitle">Add Task</h2>
+        <input id="title" placeholder="Task title" required />
+        <textarea id="description" rows="2" placeholder="Description (optional)"></textarea>
+        <div class="row">
+          <select id="priority"><option value="low">Low</option><option value="medium" selected>Medium</option><option value="high">High</option></select>
+          <select id="status"><option value="todo">To do</option><option value="in-progress">In progress</option><option value="done">Done</option></select>
+          <input id="dueDate" type="date" />
+        </div>
+        <div class="row"><button class="btn" id="saveBtn">Add Task</button><button type="button" id="cancelEdit" class="small" hidden>Cancel</button></div>
+        <p id="taskMsg" class="msg"></p>
+      </form>
+
+      <div class="filters">
+        <button class="chip active" data-f="">All</button>
+        <button class="chip" data-f="todo">To do</button>
+        <button class="chip" data-f="in-progress">In progress</button>
+        <button class="chip" data-f="done">Done</button>
+      </div>
+      <div id="taskList"></div>
+    </section>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>
