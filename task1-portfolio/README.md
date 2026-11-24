@@ -8,7 +8,7 @@
 ## Run locally
 1. `npm install`
 2. Copy `.env.example` to `.env` and set `MONGODB_URI` (free cluster at mongodb.com/atlas)
-3. `npm start` → open http://localhost:3000
+3. `npm start` → open https://tharanex-internship.onrender.com/#contact
 
 ## API
 - `GET /api/projects` – list projects
