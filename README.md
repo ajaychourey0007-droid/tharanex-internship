@@ -21,7 +21,7 @@ npm start                    # open http://localhost:3000
 Each folder has its own README with API details and Render deployment steps.
 
 ## Live demos
-- Task 1: _add link_
+- Task 1: https://tharanex-internship.onrender.com/#contact
 - Task 2: _add link_
 - Task 3: _add link_ (first registered user = Admin)
 - Task 4: _add link_
